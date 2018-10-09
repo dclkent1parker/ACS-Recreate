@@ -1,0 +1,111 @@
+html{
+    max-width: 100%;
+}
+
+header{
+    background: url("../img/header.jpg") no-repeat center;
+    background-size: cover;
+    color: white;
+    height:900px;
+}
+nav li{
+    display: inline;
+    padding-left: 25px;
+    padding-right:25px;
+    padding-top: 37px;
+    padding-bottom: 36px;
+    font-family: 'Open Sans SemiBold';
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 90px;
+    align-items: center;
+    font-size:12px;
+    font-weight: normal;
+
+}
+nav img{
+    margin-left: 20%;
+    margin-right: auto;
+}
+nav ul{
+    margin-right: 20%;
+    margin-left: auto; 
+}
+nav #inscription{
+    background-color: #d31f44;
+}
+#header2{
+    display:flex;
+    flex-wrap: center;
+    flex-direction: column;
+    height: 810px;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 35px;
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+}
+header h1{
+    margin-bottom:0;
+}
+header h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right:37px;
+    padding-left:37px;
+    background-color: rgba(175, 174, 174, 0.205);
+}
+h3{
+    font-family: 'Open Sans Light';
+    font-size: 26px;
+    margin-bottom: 52px;
+    margin-top: 19px;
+    font-weight: normal;
+}
+h4{
+    background-image: linear-gradient(to right,#d11e43, #9c0020);
+    padding-left:55px;
+    padding-right:55px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:0;
+    font-family: 'Open Sans Light';
+    font-size: 10px;
+    font-weight: normal;
+}
+#Formation{
+    height:481px;
+    background-color: white;
+}
+#pformation{
+    display:flex;
+    margin-top:69px;
+    
+}
+h2{ 
+    text-align: center;
+    font-family: 'Open Sans SemiBold';
+    font-weight: normal;
+    font-size: 22px;
+}
+#Formation h2{
+    margin-top:63px;
+    margin-bottom: 23px;
+}
+#Formation img{
+    display:block;
+    margin-top:0px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:0;
+}
+#pformation :nth-child(1){
+    text-align: right;
+}
+
+
