@@ -1,5 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+}
 html{
     max-width: 100%;
+    font-family: 'Open Sans';
+    width: 1920px;
+    height: 5765px;
+}
+p{
+    font-size:11px;
 }
 
 header{
@@ -75,23 +85,17 @@ h4{
     padding-bottom:20px;
     margin-top:0;
     font-family: 'Open Sans Light';
-    font-size: 10px;
+    font-size: 11px;
     font-weight: normal;
 }
+
+/* Partie formation */
+
 #Formation{
     height:481px;
     background-color: white;
-}
-#pformation{
-    display:flex;
-    margin-top:69px;
-    
-}
-h2{ 
-    text-align: center;
-    font-family: 'Open Sans SemiBold';
-    font-weight: normal;
-    font-size: 22px;
+    padding-left:20%;
+    padding-right:20%;
 }
 #Formation h2{
     margin-top:63px;
@@ -104,8 +108,263 @@ h2{
     margin-left:auto;
     margin-bottom:0;
 }
-#pformation :nth-child(1){
+#pformation{
+    display:flex;
+    margin-top:69px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+h2{ 
+    text-align: center;
+    font-family: 'Open Sans SemiBold';
+    font-weight: normal;
+    font-size: 22px;
+}
+#pformation :nth-child(2){order:2}
+#pformation :nth-child(3){order:3}
+#p1formation{
+    width:500px;
     text-align: right;
+    order:1;
+    padding-right:12px;
+}
+#imgformation{
+    width: 200px;
+    margin-right:14px;
+    margin-left:11px;
+}
+#p2formation{
+    width: 500px;
+    text-align: left;
+    margin-left:11px;
+}
+#p2formation ul{
+    padding-left:20px;
+    list-style-image: url("../img/ellipse.png");
+    font-size: 11px;
+}
+#p2formation li{
+    margin-bottom:0;
+    margin-top:14px;
+    padding: 0;
+}
+/* Partie enseignement */ 
+
+#Enseignement{
+    height:445px;
+    background-image: url(../img/enseignementbg.jpg);
+    background-size:cover;
+}
+#Enseignement h2{
+    color:white;
+    padding-top:63px;
+    padding-bottom: 27px;
+}
+#Enseignement #ligneenseignement{
+    display:block;
+    margin-top:0px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:0;
+}
+#containerlogos{
+    padding-right:20%;
+    padding-left:20%;
+    margin-top:72px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.logos{
+    flex-direction: column;
+    width:200px;
+    text-align: center;
+    margin-left:27px;
+    margin-right:27px;
+    color:white;
+}
+.logos p{
+    margin-top:39px;
+    font-size: 12px;
+    font-family: 'Open Sans Light';
 }
 
+/* Partie Métier */
 
+#containermétier{
+    background-color: #3e3e3e;
+    height:567px;
+    padding-right:20%;
+    padding-left:20%;
+    display:flex;
+    flex-direction: row;
+    color:white;
+}
+#métier h2{
+    text-align: left;
+}
+#métier img{
+    margin-top:27px;
+    margin-bottom:39px;
+}
+#video{
+    margin:auto;
+}
+#métier p{
+    font-family: 'Open Sans Light';
+    line-height: 2;
+}
+#métier{
+    margin-top:63px;
+    margin-right: 61px;
+}
+#métier p:last-of-type{
+    margin-top:37px;
+    margin-bottom:39px;
+}
+#métier h4{
+    width:200px;
+    background-color:#3e3e3e;
+    background-image: none;
+    border:2px solid white ;
+    text-align: center;
+}
+
+/* Partie Projet */ 
+
+#containerprojet{
+    background-color: white;
+    height:451px;
+    padding-right:20%;
+    padding-left:20%;
+    display:flex;
+    flex-direction: row;
+}
+#containerprojet #imgprojet{
+    margin:auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+#txtprojet h2{
+    text-align:left;
+    margin-bottom: 21px;
+}
+#txtprojet{
+    margin-left:42px;
+    margin-top:68px;
+    margin-right:46px;
+}
+#txtprojet p{
+    margin-top:37px;
+    margin-bottom:37px;
+}
+#txtprojet ul{
+    font-size:11px;
+    list-style-image: url("../img/ellipse.png");
+    padding-left:20px;
+}
+#txtprojet li{
+    margin-bottom:0;
+    margin-top:13px;
+    padding: 0;
+}
+#txtprojet img{
+    margin:0;
+}
+
+/*Partie Titre Pro*/
+
+#containerTitrePro{
+    height:287px;
+    background-image:url("../img/projet-bg.jpg");
+    color:white;
+    text-align: center;
+}
+#TitrePro{
+    padding-top:83px;
+    line-height: 1,5;
+}
+
+/*Partie Centres de formation*/
+
+#Centres{
+    height:833px;
+    width:1198px;
+    padding-right: 20%;
+    padding-left:20%;
+    padding-top:62px;
+}
+#entetecentres h2{
+    text-align: left;
+}
+#entetecentres{
+    padding-bottom:55px;
+}
+#imgcentres{
+    display:flex;
+    flex-wrap:wrap;
+    margin:-15px;
+
+}
+#imgcentres img{
+    margin:15px;
+}
+
+/*Partie Témoignages */ 
+#containertémoignages{
+    height:604px;
+    background-image:url(../img/temoignagesbg.jpg);
+    color:white;
+    padding-right: 20%;
+    padding-left:20%;
+}
+#témoignages1{
+    padding-top:71px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+#containertémoignages p{
+    font-size: 17px;
+    font-family: 'Open Sans Light';
+    font-weight: normal;
+}
+#containertémoignages p:first-of-type{
+    text-align:justify;
+}
+#containertémoignages p:last-of-type{
+    margin-top:64px;
+    margin-bottom:64px;
+}
+#containertémoignages h4{
+    width:225px;
+    background-color:transparent;
+    background-image: none;
+    border:2px solid white ;
+    text-align: center;
+}
+#témoignages2{
+    line-height: 1,5;
+}
+/* Partie Contact */
+
+#Contact{
+    height:786px;
+    background-color: #d31f44;
+    padding-right: 20%;
+    padding-left:20%;
+}
+#contact1{
+    display: flex;
+}
+#inputcontact{
+    width: 550px;
+    flex-wrap: wrap;
+    flex:1 1 250px;
+    
+
+}
