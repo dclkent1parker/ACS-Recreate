@@ -351,20 +351,74 @@ h2{
     line-height: 1,5;
 }
 /* Partie Contact */
-
+#Contact h2{
+    text-align:left;
+    padding-top:58px;
+    padding-bottom:0;
+    margin-bottom:0;
+}
+input{
+    font-size:12px;
+}
 #Contact{
     height:786px;
-    background-color: #d31f44;
+    background-color: #a90729;
     padding-right: 20%;
     padding-left:20%;
+    color:white;
 }
 #contact1{
     display: flex;
 }
 #inputcontact{
-    width: 550px;
     flex-wrap: wrap;
-    flex:1 1 250px;
+    flex:1 1 550px;
+}
+#NOM, #CP{
+    margin-right:45px;
+}
+#NOM, #PRENOM, #CP, #VILLE{
+    width:250px;
+}
+#EMAIL{
+    width:550px;
+}
+.input{
+    background-color:transparent;
+    border:0;
+    border-bottom: white solid 2px;
+    color:white;
+    padding-bottom:12px;
+    padding-top:39px;
+}
+input{
+    outline:none;
+}
+#MESSAGE{
+    background-color:transparent;
+    border: white solid 2px;
+    color:white;
+    padding-bottom:12px;
+    padding-top:39px;
+    width: 100%;
+    height: 200px;
+}
+#containermessage{
+    margin-top: 42px;
+}
+#ENVOYER{
+    display:flex;
     
+    font-size:10px;
+}
+#containermessage p{
+    margin-bottom:17px;
+    font-size:12px;
+}
+#textecontact{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:93px;
+    margin-right:14px;
 
 }
