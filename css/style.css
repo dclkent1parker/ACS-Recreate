@@ -432,7 +432,7 @@ input{
 }
 #Contact{
     height:786px;
-    background-color: #a90729;
+    background-image: linear-gradient(#9d0120, #d31f44);
     padding-right: 20%;
     padding-left:20%;
     color:white;
