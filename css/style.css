@@ -3,6 +3,7 @@
     margin:0;
     padding:0;
 }
+
 /* Enlever toutes les modifications par défaut sur les liens
     Ex: lien bleu, souligné, visited violet... */
 
@@ -15,16 +16,17 @@ a:visited{
 }
 html{
     max-width:100%;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Regular';
     width: 1920px;
     height: 5765px;
+    
 }
 body{
     width:100%;
     min-width: 1200px;
 }
 p{
-    font-size:12px;
+    font-size:10pt;
     line-height: 1.5;
 }
 /* Partie header: menu + présentation */
@@ -39,7 +41,7 @@ nav li{
     padding-left: 25px;
     padding-right:25px;
     padding-top: 37px;
-    padding-bottom: 36px;
+    padding-bottom: 34px;
     font-family: 'Open Sans SemiBold';
 }
 nav{
@@ -48,7 +50,7 @@ nav{
     background-color: rgba(0, 0, 0, 0.5);
     height: 90px;
     align-items: center;
-    font-size:12px;
+    font-size:12pt;
     font-weight: normal;
 
 }
@@ -72,7 +74,7 @@ nav #inscription{
     justify-content: center;
 }
 h1{
-    font-size: 35px;
+    font-size: 35pt;
     font-family: 'Open Sans Regular';
     font-weight: normal;
 }
@@ -88,14 +90,14 @@ header h3{
 }
 h3{
     font-family: 'Open Sans Light';
-    font-size: 26px;
+    font-size: 26pt;
     margin-bottom: 52px;
     margin-top: 19px;
     font-weight: normal;
 }
 h4{
     font-family: 'Open Sans Light';
-    font-size: 11px;
+    font-size: 11pt;
     font-weight: normal;
     text-align:center;
 }
@@ -214,7 +216,7 @@ h2{
 }
 .logos p{
     margin-top:39px;
-    font-size: 12px;
+    font-size: 10pt;
     font-family: 'Open Sans Light';
 }
 
@@ -233,8 +235,8 @@ h2{
     text-align: left;
 }
 #métier img{
-    margin-top:27px;
-    margin-bottom:39px;
+    margin-top:17px;
+    margin-bottom:29px;
 }
 #video{
     margin:auto;
@@ -279,7 +281,7 @@ h2{
 }
 #txtprojet h2{
     text-align:left;
-    margin-bottom: 17px;
+    margin-bottom: 7px;
 }
 #txtprojet{
     margin-left:42px;
@@ -287,8 +289,8 @@ h2{
     margin-right:46px;
 }
 #txtprojet p{
-    margin-top:37px;
-    margin-bottom:36px;
+    margin-top:27px;
+    margin-bottom:26px;
 }
 #txtprojet ul{
     font-size:11px;
@@ -314,7 +316,7 @@ h2{
     text-align: center;
 }
 #TitrePro{
-    padding-top:83px;
+    padding-top:60px;
     line-height: 1,5;
 }
 
@@ -358,7 +360,7 @@ h2{
     width: 275px;
     opacity: 0;
     transition: .5s ease;
-    background-color: #a9072a9d;
+    background-color: #d11e42b0;
 }
 .centres:hover .overlay {
     opacity: 1;
@@ -390,10 +392,12 @@ h2{
     justify-content: space-between;
     margin-bottom: 65px;
 }
+#titretémoignages img{
+    margin-top: 20px;
+}
 #containertémoignages p{
-    font-size: 17px;
+    font-size: 17pt;
     font-family: 'Open Sans Light';
-    font-weight: normal;
 }
 #containertémoignages p:first-of-type{
     text-align:justify;
@@ -421,7 +425,7 @@ h2{
     text-align:left;
     padding-top:58px;
     padding-bottom:0;
-    margin-bottom:0;
+    margin-bottom:10px;
 }
 input{
     font-size:12px;
@@ -475,7 +479,7 @@ input{
 #ENVOYER{
     display:flex;
     
-    font-size:10px;
+    font-size:10pt;
 }
 #containermessage p{
     margin-bottom:17px;
@@ -483,7 +487,7 @@ input{
 }
 #textecontact{
     margin-top:auto;
-    margin-bottom:auto;
+    margin-bottom:30px;
     margin-left:93px;
     margin-right:14px;
 }
