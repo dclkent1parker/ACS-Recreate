@@ -1,18 +1,33 @@
+/* Annuler les marges par défaut */
 *{
     margin:0;
     padding:0;
 }
+/* Enlever toutes les modifications par défaut sur les liens
+    Ex: lien bleu, souligné, visited violet... */
+
+a:link{
+    text-decoration: none;
+    color:inherit;
+}
+a:visited{
+    color:inherit;
+}
 html{
-    max-width: 100%;
+    max-width:100%;
     font-family: 'Open Sans';
     width: 1920px;
     height: 5765px;
+}
+body{
+    width:100%;
+    min-width: 1200px;
 }
 p{
     font-size:12px;
     line-height: 1.5;
 }
-
+/* Partie header: menu + présentation */
 header{
     background: url("../img/header.jpg") no-repeat center;
     background-size: cover;
@@ -79,17 +94,27 @@ h3{
     font-weight: normal;
 }
 h4{
-    background-image: linear-gradient(to right,#d11e43, #9c0020);
-    padding-left:55px;
-    padding-right:55px;
-    padding-top:20px;
-    padding-bottom:20px;
-    margin-top:0;
     font-family: 'Open Sans Light';
     font-size: 11px;
     font-weight: normal;
+    text-align:center;
 }
-
+#containerh4{
+    background-image: linear-gradient(to right,#d11e43, #9c0020);
+    height:50px;
+    width:200px;
+    display:table-cell;
+    vertical-align: middle;
+    border: 2px solid transparent;
+}
+#header2 h4{
+    margin-top:auto;
+    margin-bottom:auto;
+}
+#header2 #containerh4:active{
+    background-image:none;
+    border: white 2px solid;
+}
 /* Partie formation */
 
 #Formation{
@@ -226,14 +251,17 @@ h2{
     margin-top:37px;
     margin-bottom:39px;
 }
-#métier h4{
+#métier #containerh4{
     width:200px;
     background-color:#3e3e3e;
     background-image: none;
     border:2px solid white ;
     text-align: center;
 }
-
+#métier #containerh4:active{
+    background-color:white;
+    color:#3e3e3e;
+}
 /* Partie Projet */ 
 
 #containerprojet{
@@ -251,16 +279,16 @@ h2{
 }
 #txtprojet h2{
     text-align:left;
-    margin-bottom: 21px;
+    margin-bottom: 17px;
 }
 #txtprojet{
     margin-left:42px;
-    margin-top:68px;
+    margin-top:61px;
     margin-right:46px;
 }
 #txtprojet p{
     margin-top:37px;
-    margin-bottom:37px;
+    margin-bottom:36px;
 }
 #txtprojet ul{
     font-size:11px;
@@ -274,6 +302,7 @@ h2{
 }
 #txtprojet img{
     margin:0;
+    width: 100% auto;
 }
 
 /*Partie Titre Pro*/
@@ -294,7 +323,7 @@ h2{
 #Centres{
     height:833px;
     width:1198px;
-    padding-right: 20%;
+    padding-right:20%;
     padding-left:20%;
     padding-top:62px;
 }
@@ -313,7 +342,39 @@ h2{
 #imgcentres img{
     margin:15px;
 }
-
+.centres{
+    position:relative;
+}
+.centres img{
+    display:block;
+}
+.overlay{
+    position:absolute;
+    top: 15px;
+    bottom: 10px;
+    left: 15px;
+    right: 10px;
+    height: 275px;
+    width: 275px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #a9072a9d;
+}
+.centres:hover .overlay {
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
 /*Partie Témoignages */ 
 #containertémoignages{
     height:604px;
@@ -341,12 +402,16 @@ h2{
     margin-top:64px;
     margin-bottom:64px;
 }
-#containertémoignages h4{
+#containertémoignages #containerh4{
     width:225px;
     background-color:transparent;
     background-image: none;
     border:2px solid white ;
     text-align: center;
+}
+#containertémoignages #containerh4:active{
+    background-color:white;
+    color:black;
 }
 #témoignages2{
     line-height: 1,5;
